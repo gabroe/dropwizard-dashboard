@@ -13,6 +13,8 @@
 
         healthCheckFailed: ko.observable(false),
 
+        healthCheckSuccess: ko.observable(false),
+
         pageComponents : ko.observableArray(),
         metrics : ko.observable()
     };

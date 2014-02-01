@@ -28,6 +28,6 @@ task uberjar(type: Jar) {
 }
 
 task wrapper(type: org.gradle.api.tasks.wrapper.Wrapper) {
-    gradleVersion = '1.5'
+    gradleVersion = '1.10'
 }
 

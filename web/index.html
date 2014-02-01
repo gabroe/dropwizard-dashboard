@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <title>Dropwizard Dashboard</title>
@@ -32,8 +32,8 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li class="active"><a href="#">Dashboard</a></li>
-                        <li><a href="http://github.com/kimble">Github</a></li>
-                        <li><a href="http://blog.developer-b.com/">Blog</a></li>
+                        <li><a href="http://github.com/ruski77">Github</a></li>
+                        <li><a href="http://blog.adcowebsolutions.com.au/">Blog</a></li>
                     </ul>
 
                     <ul class="nav"  data-bind="template: { name: 'navigation-component-link', foreach: pageComponents }"></ul>
@@ -87,10 +87,19 @@
         <div class="alert alert-error" data-bind="visible: connectionToProxyLost">
             Lost connection to proxy - Refresh page to reconnect
         </div>
-        
+
+        <div class="page-header hiddenFromStart" style="visibility: visible;">
+            <h1>
+                Health Checks
+                <small>Are we good?</small>
+            </h1>
+        </div>
         <div class="alert alert-error" data-bind="visible: healthCheckFailed">
             Warning! Server healthcheck failed.
             <pre data-bind="text: healthCheckFailed"></pre>
+        </div>
+        <div class="alert" data-bind="visible: healthCheckSuccess">
+            <pre data-bind="text: healthCheckSuccess"></pre>
         </div>
 
 
@@ -112,7 +121,7 @@
         <hr>
 
         <footer>
-            <p><a href="http://no.linkedin.com/pub/kim-betti/30/4b4/562"><i class="icon-check"></i> <b>Kim A. Betti</b></a></p>
+            <p><a href="http://www.linkedin.com/in/russelladcock"><i class="icon-check"></i> <b>Russell Adcock</b></a></p>
         </footer>
 
         <!-- 3rd party -->

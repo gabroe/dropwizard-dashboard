@@ -39,7 +39,7 @@ function initializeWebsocketConnection() {
                 Dropwizard.bindings.proxyConnectionToDropwizardRestored(true);
             }
             if (json.namespace === "healthy") {
-                Dropwizard.bindings.healthCheckFailed(false);
+                Dropwizard.bindings.healthCheckSuccess(json.payload);
             }
             if (json.namespace === "unhealthy") {
                 Dropwizard.bindings.healthCheckFailed(json.payload);
