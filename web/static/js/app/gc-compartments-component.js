@@ -86,6 +86,7 @@
         pageComponent : component,
 
         onMetrics : function(metrics) {
+            //sa
             var memory_pool_usages = metrics.jvm.memory.memory_pool_usages;
             bindings.memoryPools(memory_pool_usages);
         }
