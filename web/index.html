@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
-        <title>Dropwizard Dashboard</title>
+        <title>Dropwizard Dashboard 0.8.1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Vertx experiment - Dropwizard Dashboard">
         <meta name="author" content="Kim A. Betti">
@@ -52,7 +52,7 @@
         <div class="hero-unit">
             <div class="row">
                 <div class="span5" style="text-align: center">
-                    <h1>Dropwizard dashboard</h1>
+                    <h1>Dropwizard Dashboard</h1>
 
                     <div class="alert alert-info" data-bind="visible: !connectionToProxyEstablished">
                         Please wait while contact with server is established!
@@ -62,12 +62,8 @@
                     <table class="table hiddenFromStart">
                         <tbody>
                         <tr>
-                            <th>Virtual machine name:</th>
+                            <th>Virtual machine name/version:</th>
                             <td><span data-bind="text: vminfo().name"></span></td>
-                        </tr>
-                        <tr>
-                            <th>Virtual machine version:</th>
-                            <td><span data-bind="text: vminfo().version"></span></td>
                         </tr>
                         <tr>
                             <th>Application uptime:</th>
@@ -137,13 +133,13 @@
 
         <!-- Visualization -->
         <script type="text/javascript" src="/static/js/app/vm-information-component.js"></script>
-        <script type="text/javascript" src="/static/js/app/gc-compartments-component.js"></script>
-        <script type="text/javascript" src="/static/js/app/heap-component.js"></script>
-        <script type="text/javascript" src="/static/js/app/vm-thread-component.js"></script>
-        <script type="text/javascript" src="/static/js/app/http-error-gauges.js"></script>
-        <script type="text/javascript" src="/static/js/app/http-response-codes-component.js"></script>
-        <script type="text/javascript" src="/static/js/app/logging-component.js"></script>
-
+		<script type="text/javascript" src="/static/js/app/heap-component.js"></script>
+		<script type="text/javascript" src="/static/js/app/vm-thread-component.js"></script>
+		<script type="text/javascript" src="/static/js/app/gc-compartments-component.js"></script>
+		<script type="text/javascript" src="/static/js/app/http-response-codes-component.js"></script>
+		<script type="text/javascript" src="/static/js/app/http-error-gauges.js"></script>
+		<script type="text/javascript" src="/static/js/app/logging-component.js"></script>
+		
         <script type="text/javascript" src="/static/js/app/application.js"></script>
 
 
